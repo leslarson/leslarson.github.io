@@ -1,0 +1,122 @@
+#container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 75vw;
+    max-width: 1000px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Bagel fat One;
+    font-size: 3em;
+}
+
+#controls {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 440px;
+}
+
+#fdiv,
+#cdiv {
+    display: inline-block;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid grey;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+input {
+    flex-grow: 2;
+    /* Remove the input's border */
+    border: none;
+    font-size: 1.25em;
+}
+
+input:focus {
+    /* and its focus rectangle */
+    outline: none;
+}
+
+form:focus-within {
+    /* this makes the form outline look like the input outline */
+    outline: 1px solid blue
+}
+
+#search {
+    border: 1px solid blue;
+    background: white;
+    color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search:hover {
+    background: blue;
+    color: white;
+}
+
+#clear {
+    height: 90%;
+    position: fixed;
+    top: 2px;
+    color: red;
+    border-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#clear:hover {
+    background: red;
+    color: white;
+}
+
+.gifbox {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 10px 0px;
+}
+
+.gifbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gifbox div,
+img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.singlegif {
+    position: relative;
+    display: inline-block;
+}
+
+.letter {
+    color: blue;
+}
